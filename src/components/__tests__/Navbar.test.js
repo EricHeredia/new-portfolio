@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Navbar from '../Navbar';
+import { exportAllDeclaration } from '@babel/types';
 
 describe("Navbar", () => {
   let mountedNavbar;
@@ -10,6 +11,11 @@ describe("Navbar", () => {
   })
 
   it("renders without crashing", () => {
-    let mountedNavbar = shallow(<Navbar />);
+    mountedNavbar = shallow(<Navbar />);
+  })
+
+  it("renders 5 links", () => {
+    let links = mountedNavbar.find('a');
+    expect(links.length).toBe(5);
   })
 })
