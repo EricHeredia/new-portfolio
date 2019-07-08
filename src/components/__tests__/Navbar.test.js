@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Navbar from '../Navbar';
-import { exportAllDeclaration } from '@babel/types';
 
 describe("Navbar", () => {
   let mountedNavbar;
