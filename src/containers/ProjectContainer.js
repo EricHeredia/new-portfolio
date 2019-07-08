@@ -8,7 +8,22 @@ const ProjectContainer = () => {
   useEffect(() => {
     fetch("https://raw.githubusercontent.com/EricHeredia/data-base/master/projects.json")
       .then(res => res.json())
-      .then(projects => setProjects(projects))
+      .then(projects => {
+        let container = [];
+        for (let i = 0; i < projects.length; i++) {
+          let project = projects[i];
+          container.push(
+            <Project 
+              name={project.name}
+              url={project.name}
+              git={project.git}
+              tech={project.tech}
+              image={project.image}
+            />
+          )
+        }
+        setProjects(container)
+      })
   }, []);
   
   if (projects) {
@@ -17,7 +32,7 @@ const ProjectContainer = () => {
 
   return (
     <div>
-      <Project />
+      {projects}
     </div>
   )
 };
