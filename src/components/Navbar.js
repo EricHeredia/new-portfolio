@@ -3,7 +3,7 @@ import './Navbar.scss'
 
 const Navbar = () => {
   return (
-    <nav class="navbar">
+    <nav>
       <ul>
         <li>
           <a href="#projects">Projects</a>
@@ -12,7 +12,7 @@ const Navbar = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="https://github.com/EricHeredia" target="_blank">Github</a>
+          <a href="https://github.com/EricHeredia" rel="noopener noreferrer" target="_blank">Github</a>
         </li>
         <li>
           <a href="google.com">Resume</a>
