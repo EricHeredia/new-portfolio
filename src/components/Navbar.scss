@@ -1,16 +1,24 @@
-$badass: #BADA55;
-$primaryColor: #333;
+$textColor: #F2F2F2;
+$backgroundColor: #333;
+$hoverColor: #222;
 
 nav {
-  background-color: $primaryColor;
+  background-color: $backgroundColor;
   position: fixed;
   top: 0;
   width: 100%;
   overflow: hidden;
   margin-left: 0;
+  .logo {
+    position: relative;
+    z-index: 10;
+    padding: 5px 0 0 5px;
+    float: left;
+  }
   ul {
     text-align: center;
     list-style-type: none;
+    transform: translate(0, 10%);
     margin: 0;
     padding: 15px;
     li {
@@ -18,10 +26,10 @@ nav {
       font-size: 18px;
       a {
         text-decoration: none;
-        padding: 15px;
-        color: #F2F2F2;
+        padding: 15px 35px;
+        color: $textColor;
         &:hover {
-          background-color: #222;
+          background-color: $hoverColor;
           border-radius: 10px;
         }
       }

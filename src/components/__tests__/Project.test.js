@@ -13,4 +13,14 @@ describe("Project", () => {
     mountedProject = shallow(<Project />);
   })
 
+  it("renders a title", () => {
+    let title = mountedProject.find("h2");
+    expect(title.length).toBe(1);
+  })
+
+  it("renders a thumbnail", () => {
+    let thumbnail = mountedProject.find("img");
+    expect(thumbnail.length).toBe(1);
+  })
+
 })

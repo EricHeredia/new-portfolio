@@ -25,13 +25,9 @@ const ProjectContainer = () => {
         setProjects(container)
       })
   }, []);
-  
-  if (projects) {
-    projects.forEach(x=>console.log(x))
-  }
 
   return (
-    <div>
+    <div id="projects">
       {projects}
     </div>
   )

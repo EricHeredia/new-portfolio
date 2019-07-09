@@ -1,10 +1,11 @@
 import React from 'react'
 import './Project.scss'
 
-const Project = () => {
+const Project = (props) => {
   return (
     <div className="project">
-      <p>Project</p>
+      <h2>{props.name}</h2>
+      <img src={props.image} alt="test" />
     </div>
   )
 }

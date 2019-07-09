@@ -13,8 +13,13 @@ describe("Navbar", () => {
     mountedNavbar = shallow(<Navbar />);
   })
 
-  it("renders 5 links", () => {
+  it("renders 6 links", () => {
     let links = mountedNavbar.find('a');
-    expect(links.length).toBe(5);
+    expect(links.length).toBe(6);
+  })
+
+  it("renders the logo", () => {
+    let logo = mountedNavbar.find('img');
+    expect(logo.length).toBe(1);
   })
 })
