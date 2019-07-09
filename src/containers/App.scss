@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 @import '../components/Navbar.scss';
 
 body {
+  font-family: "Ubuntu";
   margin: 0;
   background-color: $textColor;
 }

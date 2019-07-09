@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 $textColor: #F2F2F2;
 $backgroundColor: #333;
 $hoverColor: #222;
 
 nav {
+  font-family: "Ubuntu";
   background-color: $backgroundColor;
   position: fixed;
   top: 0;
@@ -13,7 +16,7 @@ nav {
   .logo {
     position: relative;
     z-index: 10;
-    padding: 5px 0 0 5px;
+    padding: 5px 0 2px 5px;
     float: left;
   }
   ul {

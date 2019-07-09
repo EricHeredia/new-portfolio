@@ -12,4 +12,5 @@ describe("ProjectContainer", () => {
   it("renders without crashing", () => {
     mountedProjectContainer = shallow(<ProjectContainer />);
   })
+
 })
