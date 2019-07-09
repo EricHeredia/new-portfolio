@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Project from '../components/Project';
+import './ProjectContainer.scss'
 
 const ProjectContainer = () => {
     

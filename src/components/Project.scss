@@ -6,6 +6,10 @@
   text-align: center;
   &:hover {
     background-color: #ccc;
+    img {
+      opacity: .25;
+      //transition: all .2s ease-in;
+    }
   }
   img {
     height: 200px;
