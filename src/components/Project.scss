@@ -1,6 +1,7 @@
 @import './Navbar.scss';
 
 .project {
+  position: relative;
   display: inline-block;
   margin-top: 100px;
   background-color: $textColor;
@@ -10,14 +11,14 @@
   h2 {
     font-weight: normal;
   }
-  a {
+  .project-links {
     display: none;
   }
   &:hover {
     transition: all .2s ease-in;
     background-color: $backgroundColor;
     color: $textColor;
-    a {
+    .project-links {
       display: block;
     }
     img {
@@ -28,5 +29,12 @@
   img {
     height: 200px;
     width: 250px;
+  }
+  .vCenter {
+    position: absolute;
+    margin: auto;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
 }
