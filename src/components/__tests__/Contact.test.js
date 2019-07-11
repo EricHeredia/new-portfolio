@@ -1,11 +1,16 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import Contact from '../Contact';
+import React from 'react'
+import { shallow } from 'enzyme'
+import Contact from '../Contact'
 
 describe("Contact", () => {
-  let mountedContact;
+  let mountedContact
 
   it("renders without crashing", () => {
-    mountedContact = shallow(<Contact />);
+    mountedContact = shallow(<Contact />)
+  })
+
+  it("renders 2 links", () => {
+    let links = mountedContact.find("a")
+    expect(links.length).toBe(2)
   })
 })

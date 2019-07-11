@@ -1,9 +1,11 @@
 @import './Navbar.scss';
 
 #contact {
+  overflow: hidden;
   text-align: center;
   color: $textColor;
   background-color: $backgroundColor;
+  margin-top: 10px;
   .large-head {
     font-size: 35px;
   }
@@ -14,12 +16,26 @@
   .connect {
     margin-top: -30px;
   }
+  .cpyrght {
+    font-size: 12px;
+    font-style: italic;
+  }
   .link-git {
     margin-top: -25px;
     font-size: 50px;
-    i {
-      padding-left: 25px;
-      padding-right: 25px;
+    padding-bottom: 15px;
+    a {
+      margin-left: 25px;
+      margin-right: 25px;
+      &:link, &:visited, &:active {
+        color: $textColor;
+      }
+      &:hover {
+        color: #B4B4B4;
+      }
+      i {
+        transform: translateY(3px);
+      }
     }
   }
 }

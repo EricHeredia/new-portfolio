@@ -11,8 +11,11 @@ const Contact = () => {
       <p className="connect">Or connect via</p>
       <br />
       <div className="link-git">
-        <i className="fab fa-linkedin lower"></i>||<i className="fab fa-github-square lower"></i>
+        <a href="https://linkedin.com/in/ericheredia" rel="noopener noreferrer" target="_blank"><i className="fab fa-linkedin lower"/></a>
+        ||
+        <a href="https://github.com/ericheredia" rel="noopener noreferrer" target="_blank"><i className="fab fa-github-square lower"/></a>
       </div>
+      <p className="cpyrght">© 2017 - {new Date().getFullYear()} Eric Heredia</p>
     </div>
   )
 }
