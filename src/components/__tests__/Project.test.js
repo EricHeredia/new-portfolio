@@ -23,4 +23,9 @@ describe("Project", () => {
     expect(thumbnail.length).toBe(1);
   })
 
+  it("renders 2 links", () => {
+    let links = mountedProject.find("a");
+    expect(links.length).toBe(2);
+  })
+
 })

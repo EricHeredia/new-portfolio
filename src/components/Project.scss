@@ -10,12 +10,19 @@
   h2 {
     font-weight: normal;
   }
+  a {
+    display: none;
+  }
   &:hover {
+    transition: all .2s ease-in;
     background-color: $backgroundColor;
     color: $textColor;
+    a {
+      display: block;
+    }
     img {
+      transition: all .2s ease-in;
       opacity: .2;
-      //transition: all .2s ease-in;
     }
   }
   img {
