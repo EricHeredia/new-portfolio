@@ -16,7 +16,7 @@ const ProjectContainer = () => {
           container.push(
             <Project 
               name={project.name}
-              url={project.name}
+              url={project.url}
               git={project.git}
               tech={project.tech}
               image={project.image}

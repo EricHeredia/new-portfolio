@@ -8,8 +8,8 @@ const Project = (props) => {
       <h2>{props.name}</h2>
       <img src={props.image} alt="test" />
       <div className="project-links vCenter">
-        <a href="google.com" className="hover-link" title="View Project"><i class="fas fa-eye"></i></a>
-        <a href="google.com" className="hover-link" title="View Code"><i class="fab fa-github"></i></a>
+        <a href={props.url} rel="noopener noreferrer" target="_blank" className="hover-link" title="View Project"><i class="fas fa-eye"></i></a>
+        <a href={props.git} rel="noopener noreferrer" target="_blank" className="hover-link" title="View Code"><i class="fab fa-github"></i></a>
       </div>
     </div>
   )

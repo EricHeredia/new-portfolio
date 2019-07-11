@@ -8,7 +8,7 @@ const Contact = () => {
       <p>Feel free to send me an E-mail at</p>
       <p className="email-text">EricDavidHeredia@gmail.com</p>
       <br />
-      <p className="connect">Or connect via</p>
+      <p className="connect">or connect via</p>
       <br />
       <div className="link-git">
         <a href="https://linkedin.com/in/ericheredia" rel="noopener noreferrer" target="_blank"><i className="fab fa-linkedin lower"/></a>
